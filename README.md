@@ -1,5 +1,5 @@
 # Dizi-finder
-its so easy to use choose your tv series and watch
+its so easy to use choose your tv series and watch: http://dizi-fi.ml/
 
 PS:some of tv series on the list might not be working they will be fixed asap
 
