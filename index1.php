@@ -1,3 +1,5 @@
+
+
 <html>
 
 <head>
@@ -30,10 +32,10 @@ Yabanci Dizi Bul
 <div class="container" style="text-align: center; font-family: sans-serif; color: gray;  ">
     <div class="row">
         <div class="col-sm-12" >
-       
+
 
 Dizi Adi:
-<input type="text" list="browsers" id="wtf" style="border-radius:10px; color: black;" />
+<input type="text" list="browsers" id="wtf" placeholder="Mr. Robot" style="border-radius:10px; color: black;" />
 <datalist id="browsers">
 <option value="Band Of Brothers">
 <option value="Breaking Bad">
@@ -89,14 +91,14 @@ Dizi Adi:
 <option value="The 24">
 <option value="Outlander">
 <option value="Fringe">
-<option value="The Big Bang Theory"> 
+<option value="The Big Bang Theory">
 <option value="Homeland">
 <option value="Sense8">
 <option value="HIMYM">
 <option value="Misfits">
 <option value="Banshee">
 <option value="The Americans">
-</datalist> 
+</datalist>
 
 
 
@@ -106,43 +108,84 @@ Sezon:
 
 
 
-<input type="number" name="season" min="1" max="10" id="sezon" style="width:7%; border-radius:10%;"/>
+<input type="number" name="season" min="1" max="10" placeholder="2" id="sezon" style="width:7%; border-radius:10%;"/>
 
 </br>
 <br>
 Bolum:
 
-<input type="number" name="season" min="1" max="25" id="bolum" style="width:7%; border-radius:10%;" />
+<input type="number" name="season" min="1" max="25" id="bolum" placeholder="5" style="width:7%; border-radius:10%;" />
 <br></br>
 <form action="<?=$_SERVER['PHP_SELF'];?>" method="post">
  <input type="button" name="submit" value="getir" style="background-color: green; color:pink; border-radius: 10%;" onclick="kk();">
  </form>
           </div>
         </div>
-        
-       
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
         </div>
-  
 
 
 
- 
+
+
  <script type="text/javascript">
+
+
+
+
+
+
+
+
+
     var lolz;
-    function onload() { 
+    function onload() {
         wtf = document.getElementById('wtf');
         sezon=document.getElementById('sezon');
         sezon=document.getElementById('bolum');
     }
+
+
+var x = document.cookie;
+
+
+document.getElementById('wtf').innerHTML = x.value;
+
     function kk(){
+
+
+
+
+//  document.cookie = "username=sezon; expires=Thu, value="sezon.value" Dec 2016 12:00:00 UTC; path=/"
+  //document.cookie = "username=bolum; expires=Thu, value="bolum.value" Dec 2016 12:00:00 UTC; path=/"
+
+
    var show="dizist.net/izle/";
    var nam=wtf.value;
-var res= nam.split(" ");   
+if (nam=="")
+{
+nam = "Mr. Robot";
+
+}
+
+if (sezon.value=="")
+{
+sezon.value = "2";
+
+}
+if (bolum.value=="")
+{
+bolum.value = "5";
+
+}
+
+var res= nam.split(" ");
 
 for (i=0;i<res.length;i++) {
 	show=show+res[i]+"-";
@@ -153,8 +196,13 @@ for (i=0;i<res.length;i++) {
       // document.write(show);
   //   window.location = "http://"+show;
 
+
+
 show= "http://"+show;
     window.location = "generate.php?ra="+show;
+
+
+
 
 
 
