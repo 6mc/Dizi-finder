@@ -1,4 +1,5 @@
 # Dizi-finder
+[![N|Solid](https://img.shields.io/teamcity/http/teamcity.jetbrains.com/s/bt345.svg)](https://dizi-fi.ml)
 its so easy to use choose your tv series and watch: http://dizi-fi.ml/
 
 İMPORTANT:UNFORTUNATELY WEBSİTE İS NOT WORKİNG ANYMORE.THE FIRST REASON İS DATABASES DAMAGED, AND THE SECOND REASON IS THE WEBSİTES THAT I USED GET VİDEOEMBED CODES  CHANGED İTS WORKİNG STRUCTURE, OF COURSE İ CAN FİX İT BUT İ REALLY DONT HAVE TİME THESE DAYS MAYBE IN FUTURE I CAN COMEBACK WITH BETTER TV-SERIES WEB APP, THANKS...
